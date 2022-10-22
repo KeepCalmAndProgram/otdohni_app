@@ -1,0 +1,24 @@
+{
+  "language": "Polski",
+  "@language": {
+    "description": "Wybrałeś język Polski"
+  },
+  "phrase1" : "Muzyka pomaga skutecznie się zrelaksować.",
+  "phrase2" : "Znajdź przytulne, ciche miejsce.",
+  "phrase3" : "Zamknij oczy i weź kilka głębokich oddechów.",
+  "phrase4" : "Masaż pomaga rozładować napięcie.",
+  "phrase5" : "Ćwiczenia wspomagają uwalnianie endorfin.",
+  "phrase6" : "Zarezerwuj czas na ulubiony sport.",
+  "phrase7" : "Chodzenie poprawi Twój nastrój.",
+  "phrase8" : "Wieczorne spacery promują zdrowy sen.",
+  "phrase9" : "Brak snu prowadzi do ciągłego uczucia zmęczenia.",
+  "phrase10" : "Zdrowy sen od 22:00 - 6:00.",
+  "phrase11" : "Jeśli jest okazja do drzemki, nie przegap jej.",
+  "phrase12" : "Pomyśl o miłych wspomnieniach.",
+  "play_btn_label" : "Odtwórz",
+  "pause_btn_label" : "Pauza",
+  "appbar_home_title": "Czas odpocząć",
+  "appbar_statistics_title": "Statystyki",
+  "statistics_week_selector": "Niedziela",
+  "statistics_month_selector": "Miesiąc"
+}
