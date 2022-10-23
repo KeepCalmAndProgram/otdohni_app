@@ -4,7 +4,8 @@ class FadeInOut extends StatefulWidget {
   final Widget child;
   VoidCallback? fadeCompleteCallback;
 
-  FadeInOut({required this.child, this.fadeCompleteCallback});
+  FadeInOut({Key? key, required this.child, this.fadeCompleteCallback})
+      : super(key: key);
 
   @override
   createState() => _FadeInOutState();
@@ -19,7 +20,7 @@ class _FadeInOutState extends State<FadeInOut>
   void initState() {
     _controller = AnimationController(
       vsync: this,
-      duration: const Duration(seconds: 5),
+      duration: const Duration(seconds: 3),
     );
     _animation = Tween(
       begin: 0.0,

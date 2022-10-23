@@ -30,14 +30,15 @@ dependencies:
   flutter:
     sdk: flutter
   charts_flutter: ^0.12.0
-  mobx: ^2.1.1
+  mobx: ^2.0.5
   flutter_localizations:
     sdk: flutter
   intl: ^0.17.0
+  hive: ^2.0.4
 
   cupertino_icons: ^1.0.2
-  circular_countdown_timer: ^0.2.2
-  duration_picker: ^1.1.0+1
+  circular_countdown_timer: ^0.2.0
+  syncfusion_flutter_charts: ^20.3.50
 
 
 dev_dependencies:

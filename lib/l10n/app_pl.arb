@@ -3,6 +3,17 @@
   "@language": {
     "description": "Wybrałeś język Polski"
   },
+
+  "monday" : "Pon",
+  "tuesday" : "Wt",
+  "wednesday" : "Śr",
+  "thursday" : "Czw",
+  "friday" : "Pt",
+  "saturday" : "Sob",
+  "sunday" : "Niedz",
+
+  "statistics" : "Statystyka",
+
   "phrase1" : "Muzyka pomaga skutecznie się zrelaksować.",
   "phrase2" : "Znajdź przytulne, ciche miejsce.",
   "phrase3" : "Zamknij oczy i weź kilka głębokich oddechów.",
@@ -15,6 +26,7 @@
   "phrase10" : "Zdrowy sen od 22:00 - 6:00.",
   "phrase11" : "Jeśli jest okazja do drzemki, nie przegap jej.",
   "phrase12" : "Pomyśl o miłych wspomnieniach.",
+
   "play_btn_label" : "Odtwórz",
   "pause_btn_label" : "Pauza",
   "appbar_home_title": "Czas odpocząć",

@@ -4,6 +4,8 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'fade_in.dart';
 
 class PhraseAutoGenerator extends StatefulWidget {
+  const PhraseAutoGenerator({Key? key}) : super(key: key);
+
   @override
   _PhraseAutoGeneratorState createState() => _PhraseAutoGeneratorState();
 }

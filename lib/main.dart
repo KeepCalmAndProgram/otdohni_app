@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
-
-import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:otdohni_app/constants.dart';
 import 'package:otdohni_app/l10n/l10n.dart';
 import 'package:otdohni_app/screens/home_page.dart';
+import 'package:otdohni_app/screens/stats_screen.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -55,7 +57,7 @@ class MyApp extends StatelessWidget {
         GlobalCupertinoLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
       ],
-      home: HomePage(),
+      home: StatsScreen(),
     );
   }
 }
