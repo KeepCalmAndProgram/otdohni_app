@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:otdohni_app/constants.dart';
+import 'package:otdohni_app/l10n/l10n.dart';
+import 'package:otdohni_app/screens/emoji_screen.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -10,32 +13,50 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      title: 'Time for Rest',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        scaffoldBackgroundColor: backgroundColor,
+        colorScheme: const ColorScheme(
+            primary: primaryColor,
+            primaryVariant: primaryColor,
+            secondary: secondaryColor,
+            secondaryVariant: secondaryColor,
+            surface: surfaceColor,
+            background: backgroundColor,
+            error: errorColor,
+            onPrimary: textColorOnDark,
+            onSecondary: textColorOnLight,
+            onSurface: onSurfaceColor,
+            onBackground: onBackgroundColor,
+            onError: onErrorColor,
+            brightness: Brightness.light),
+        appBarTheme: const AppBarTheme(
+          centerTitle: true,
+          backgroundColor: primaryColor,
+          actionsIconTheme: IconThemeData(
+            color: onPrimaryColor,
+          ),
+          iconTheme: IconThemeData(
+            color: onPrimaryColor,
+          ),
+        ),
+        textTheme: const TextTheme(
+          headline4: TextStyle(
+              fontSize: 75.0,
+              color: onBackgroundColor,
+              fontWeight: FontWeight.bold),
+        ),
+        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
-
-  final String title;
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Container(),
+      supportedLocales: L10n.all,
+      localizationsDelegates: [
+        AppLocalizations.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+      ],
+      home: EmojiScreen(),
     );
   }
 }

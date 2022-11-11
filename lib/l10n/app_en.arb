@@ -1,0 +1,36 @@
+{
+  "language": "English",
+  "@language": {
+    "description": "You have chosen English"
+  },
+
+  "monday" : "Mon",
+  "tuesday" : "Tue",
+  "wednesday" : "Wed",
+  "thursday" : "Thu",
+  "friday" : "Fri",
+  "saturday" : "Sat",
+  "sunday" : "Sun",
+
+  "statistics" : "Stats",
+
+  "phrase1" : "Music helps to effectively relax.",
+  "phrase2" : "Find a cozy, cool place.",
+  "phrase3" : "Close your eyes and take a few deep breaths.",
+  "phrase4" : "Massage helps relieve tension.",
+  "phrase5" : "Exercise promotes the release of endorphins.",
+  "phrase6" : "Set aside time for your favorite sport.",
+  "phrase7" : "Walking will improve your mood.",
+  "phrase8" : "Evening walks promote sound sleep.",
+  "phrase9" : "Lack of sleep leads to constant feeling of tiredness.",
+  "phrase10" : "Healthy sleep from 22:00 - 6:00.",
+  "phrase11" : "If there is an opportunity to take a nap, do not miss it.",
+  "phrase12" : "Think about fond memories.",
+
+  "play_btn_label" : "Play",
+  "pause_btn_label" : "Pause",
+  "appbar_home_title": "Time to Rest",
+  "appbar_statistics_title": "Statistics",
+  "statistics_week_selector": "Week",
+  "statistics_month_selector": "Month"
+}
