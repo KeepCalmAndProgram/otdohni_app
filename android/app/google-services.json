@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1095836234941",
+    "project_id": "otdohni-app",
+    "storage_bucket": "otdohni-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1095836234941:android:7fcafd3171cf69cacf73d4",
+        "android_client_info": {
+          "package_name": "com.example.otdohni_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1095836234941-5fv1l4spfnccajooh67v0875tg81i5os.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOme9XkfiDDC4Uf8gZKXPrThQFkFiXFNg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1095836234941-5fv1l4spfnccajooh67v0875tg81i5os.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

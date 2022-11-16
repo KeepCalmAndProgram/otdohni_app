@@ -34,14 +34,18 @@ class _TimerFrontSideState extends State<TimerFrontSide> {
   void timerFrontSideAnimatingCheck() {
     if (_isAnimating) {
       _controller.pause();
-      setState(() {
-        _isAnimating = false;
-      });
+      setState(
+        () {
+          _isAnimating = false;
+        },
+      );
     } else {
       _isStart ? _controller.start() : _controller.resume();
-      setState(() {
-        _isAnimating = true;
-      });
+      setState(
+        () {
+          _isAnimating = true;
+        },
+      );
     }
   }
 
@@ -65,16 +69,20 @@ class _TimerFrontSideState extends State<TimerFrontSide> {
       isTimerTextShown: true,
       autoStart: false,
       onStart: () {
-        setState(() {
-          _isStart = false;
-          _isAnimating = true;
-        });
+        setState(
+          () {
+            _isStart = false;
+            _isAnimating = true;
+          },
+        );
       },
       onComplete: () {
-        setState(() {
-          _isStart = true;
-          _isAnimating = false;
-        });
+        setState(
+          () {
+            _isStart = true;
+            _isAnimating = false;
+          },
+        );
       },
     );
   }

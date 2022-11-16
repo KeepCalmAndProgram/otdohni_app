@@ -31,55 +31,56 @@ class _StatsScreenState extends State<StatsScreen> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-        child: Scaffold(
-      appBar: AppBar(
-        title: Text(AppLocalizations.of(context)!.statistics),
-        leading: IconButton(
-          onPressed: () {},
-          icon: const Icon(
-            Icons.arrow_back,
-            color: secondaryColor,
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text(AppLocalizations.of(context)!.statistics),
+          leading: IconButton(
+            onPressed: () {},
+            icon: const Icon(
+              Icons.arrow_back,
+              color: secondaryColor,
+            ),
+          ),
+        ),
+        body: Padding(
+          padding: EdgeInsets.all(25.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  ElevatedButton(
+                      onPressed: () {
+                        /// do something
+                      },
+                      child: Text('Week')),
+                  ElevatedButton(
+                      onPressed: () {
+                        /// do something
+                      },
+                      child: Text('Month'))
+                ],
+              ),
+              SfCartesianChart(
+                series: <ChartSeries>[
+                  ColumnSeries<DataModel, String>(
+                      animationDuration: 10000,
+                      dataSource: _chartData,
+                      xValueMapper: (DataModel data, _) => data.day,
+                      yValueMapper: (DataModel data, _) => data.data,
+                      color: Color.fromRGBO(8, 142, 255, 1))
+                ],
+                primaryXAxis: CategoryAxis(),
+              ),
+              SizedBox(
+                height: MediaQuery.of(context).size.width / 2,
+              ),
+            ],
           ),
         ),
       ),
-      body: Padding(
-        padding: EdgeInsets.all(25.0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                ElevatedButton(
-                    onPressed: () {
-                      /// do something
-                    },
-                    child: Text('Week')),
-                ElevatedButton(
-                    onPressed: () {
-                      /// do something
-                    },
-                    child: Text('Month'))
-              ],
-            ),
-            SfCartesianChart(
-              series: <ChartSeries>[
-                ColumnSeries<DataModel, String>(
-                    animationDuration: 10000,
-                    dataSource: _chartData,
-                    xValueMapper: (DataModel data, _) => data.day,
-                    yValueMapper: (DataModel data, _) => data.data,
-                    color: Color.fromRGBO(8, 142, 255, 1))
-              ],
-              primaryXAxis: CategoryAxis(),
-            ),
-            SizedBox(
-              height: MediaQuery.of(context).size.width / 2,
-            ),
-          ],
-        ),
-      ),
-    ));
+    );
   }
 
   List<DataModel> getChartData() {

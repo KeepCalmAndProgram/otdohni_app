@@ -3,7 +3,7 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:otdohni_app/constants.dart';
 import 'package:otdohni_app/l10n/l10n.dart';
-import 'package:otdohni_app/screens/emoji_screen.dart';
+import 'package:otdohni_app/screens/home_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -56,7 +56,7 @@ class MyApp extends StatelessWidget {
         GlobalCupertinoLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
       ],
-      home: EmojiScreen(),
+      home: HomeScreen(),
     );
   }
 }
